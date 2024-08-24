@@ -13,7 +13,7 @@ export default function AvailablePlaces({ onSelectPlace }) {
         setIsFetching(true);
         async function fetchPlaces() {
             try {
-                const olaces = await fetchAvaliablePlaces();
+                const places = await fetchAvaliablePlaces();
 
                 navigator.geolocation.getCurrentPosition((position) => {
                     const sortedPlaces = sortPlacesByDistance(
